@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import DogImage from '../components/dogImage'
 
 
 export default function Home() {
@@ -12,9 +13,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <h1 className="text-5xl font-bold underline">
-          Hello world!
-        </h1>
+        <DogImage />
       </main>
     </>
   )
