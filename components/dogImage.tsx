@@ -14,7 +14,6 @@ export default function dogImage() {
     (async () => {
       const res = await searchDog();
       setDogImage(res.message);
-      console.log(res)
     }) ()
   }, []);
 
@@ -27,7 +26,7 @@ export default function dogImage() {
   return(
     <>
       <div className='text-center'>
-        <h1 className='font-bold'>犬！</h1>
+        <h1 className='font-bold mb-3'>犬の画像！</h1>
         <div className='flex justify-center'>
           <Image 
             src={dogImage}
@@ -36,7 +35,7 @@ export default function dogImage() {
             alt='犬'
           />
         </div>
-        <button className='bg-blue-500 hover:bg-blue-400 text-white rounded px-4 py-2' onClick={handleClick}>画像を検索</button>
+        <button className='bg-blue-500 hover:bg-blue-400 text-white rounded px-4 py-2 mt-3' onClick={handleClick}>画像を検索</button>
       </div>
     </>
   )
